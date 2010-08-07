@@ -1,0 +1,20 @@
+#simple-pagination-loading { 
+   width: 100%; 
+   position: absolute;
+}
+
+.simple-pagination {
+   width: 100px;
+}
+.simple-pagination-li { 
+   list-style: none; 
+   display: inline;
+   margin-right: 16px; 
+   /*padding:5px; */
+   color:#0063DC; 
+   height: 10px;
+}
+li.simple-pagination-li:hover { 
+   color:#FF0084; 
+   cursor: pointer; 
+}

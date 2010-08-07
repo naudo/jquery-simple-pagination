@@ -1,0 +1,45 @@
+== What ==
+jquery.simplePagination is a easy to use jquery widget to handle pagination of data.
+
+== How To Use ==
+Put 2 divs and a ul into the page that needs to be paginated. The UL should have the id "simple-pagination" and the divs will need the ids "simple-pagination-loading" and "simple-pagination-content". Be sure to put a call in the javascript section for the widget.
+
+Here is a haml snippet.
+:javascript
+  $("#simple-pagination").simplePagination({url:"/appointments/2/notes/"});
+
+%div#simple-pagination-loading
+%div#simple-pagination-content
+%ul#simple-pagination
+
+Also you will need to make sure jQuery, jquery.simplePagination.js, and jquery.simplePagination.css are loaded.
+
+== TODO ==
+1.Handle Large amounts of pages
+ a. Arrows (<< || >>
+ b.  ...
+2. pretty?
+3. handle html generation in a more flexible way
+
+
+
+== License ==
+Copyright (c) 2010 Nicholas Audo
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ THE SOFTWARE.
